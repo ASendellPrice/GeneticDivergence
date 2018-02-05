@@ -6,7 +6,7 @@ Points along a genome which vary in a single nucleotide (A,C,G or T) between ind
 
 **Above:** *The upper DNA molecule differs from the lower DNA molecule at a single point along the genome.
 
-Within a population of individuals we would expect individuals to be more similar (have less variation in SNPs) than individuals from different populations. For example, the table below shows nucleotides at 6 SNPs for ten different individuals. At no SNP are any indivuals all the same, but there are some patterns emerging: at SNP 1 all inviduals from population A are the same (nucleotide A) as are indivuals from population B (nucleotide C). Similarly individuals from the same population share the same nucleotide for SNP 6. 
+Within a population we would expect individuals to be more similar (have less variation in SNPs) than individuals from different populations. For example, the table below shows nucleotides at 6 SNPs for ten different individuals. At no SNP are all individuals all the same, but there are some patterns emerging: at SNP 1 all inviduals from population A are the same (nucleotide A) as are indivuals from population B (nucleotide C). Similarly individuals from the same population share the same nucleotide for SNP 6. 
 
 | Individual  | SNP 1 | SNP2  | SNP3  | SNP4  | SNP 5 | SNP 6 | Pop |
 |-------------|-------|-------|-------|-------|-------|-------|-----|
@@ -17,10 +17,15 @@ Within a population of individuals we would expect individuals to be more simila
 | 5           | **A** | T     | G     | G     | G     | **C** | A   |
 | 6           | **C** | G     | A     | T     | A     | **A** | B   |   
 | 7           | **C** | T     | G     | G     | A     | **A** | B   |
-| 8           | **A** | T     | G     | C     | G     | **C** | A   |
+| 8           | **A** | T     | G     | T     | G     | **C** | A   |
 | 9           | **A** | G     | G     | G     | G     | **C** | A   |
 | 10          | **C** | T     | G     | G     | A     | **A** | B   |
 
-Based on this assumption, we could assign individuals to populations (reasonably reliably) if all we knew about them was which nucleotide they had at each SNP. Luckily fot you Mason, we already which nucleotide (A, C, T or G) individuals from two silvereye populations are accross 112,000 SNPs. 
+Based on this assumption, we could assign individuals to populations if all we knew about them was which nucleotide they had at each SNP. If we have lots of SNPs (i.e. 1,000s) we could do this very reliably. Luckily for you Mason, we already know which nucleotide individuals from two different silvereye populations are across 112,000 SNPs. 
+
+
+
+
+we already which nucleotide (A, C, T or G) individuals from two silvereye populations are accross 112,000 SNPs. 
 
 The file Mystery.VCF contains 120,000 SNPs (Single Nucleotide Polymorphisms - regions of the genome that vary between individuals). 
